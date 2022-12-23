@@ -36,6 +36,8 @@ public class BasicNavigations {
         System.out.println("Current Title ="+currentTitle);
         String currentURL=driver.getCurrentUrl();
         System.out.println("Current URL ="+currentURL);
+        driver.quit();
+        driver.close();
 
 
     }

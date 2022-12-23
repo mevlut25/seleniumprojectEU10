@@ -8,6 +8,13 @@ public class BasicNavigations {
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
+        driver.manage().window().maximize();
+
+       //driver.manage().window().fullscreen();
+
+
+
+
         driver.get("https://www.tesla.com");
 
         String currentTitle=driver.getTitle();
